@@ -1,4 +1,4 @@
-# Artificial Netlist Generator
+# Netlist Generator
 
 ## Introduction
 The structural characteristics of a place and route (P&R) benchmark vary widly depending on the logic and synthesis method with target technologies. The structural characteristics affect the solution space of CAD algorithms (e.g., partitioning, placement, routing, etc), so insufficient number of P&R benchmarks may lead to the poor generalizability for unseen circuits. 
@@ -8,9 +8,9 @@ Research communities have tried to publish open-source benchmarks to support CAD
 Researchers somtimes create several new versions of circuits by combining multiple modules or modifying functionality at the RTL level, but these modifications cannot provide a large variation in circuit characteristics compared to the original circuit and consume a lot of human resources for data scalability.
 
 One of the solutions to mitigate the lack of circuit benchmarks is to generate artificial circuits that represent realistic circuit characteristics. Artificial circuits can be generated using specific rules and programs so that it is cost-less compared to real-world data in terms of data scalability. 
-This is a strong motivartion why we developed this program called 'artificla netlist generator' (ANG).
+This is a strong motivartion why we developed this program called 'netlist generator' (NG).
 
-ANG can create any artificial gate-level netlist from user-specified parameters representing the topological characteristics of the circuit. ANG takes six topological parameters as inputs: (1) number of instances, (2) number of primary input and outputs, (3) average net degree (=average number of fanouts), (4) average size of net bounding box (=average hpwl after placement), (5) average depth of timing paths (= average depth of leaf nodes), (6) ratio of sequential logic gates.
+ANG can create any artificial gate-level netlist from user-specified parameters representing the topological characteristics of the circuit. NG takes six topological parameters as inputs: (1) number of instances, (2) number of primary input and outputs, (3) average net degree (=average number of fanouts), (4) average size of net bounding box (=average hpwl after placement), (5) average depth of timing paths (= average depth of leaf nodes), (6) ratio of sequential logic gates.
 
 ## Usage
 
